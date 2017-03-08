@@ -18,6 +18,23 @@
 
 // Hint, you may want to use reverseObject() as a helper function.
 
+var reverseEverything = function(input){
+	var outputArr = []
+	for (var i = outputArr.length - 1; i >= 0; i--) {
+	  if (input.hasOwnProperty(propKey)) {
+	    outputArr[input[propKey]] = propKey
+	  }
+	}
+}
+
+var reverseEverything = function(object){
+  var reverseArray = []
+  for (var i = object.length - 1; i >= 0; i--) {
+   var revProperty = object[i]
+   reverseArray.push(reverseObject(revProperty))
+  }
+  return reverseArray
+}
 
 
 
