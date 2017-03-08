@@ -28,12 +28,12 @@ var reverseEverything = function(input){
 }
 
 var reverseEverything = function(object){
-  var reverseArray = []
+  var revArr = []
   for (var i = object.length - 1; i >= 0; i--) {
    var revProperty = object[i]
-   reverseArray.push(reverseObject(revProperty))
+   revArr.push(reverseObject(revProperty))
   }
-  return reverseArray
+  return revArr
 }
 
 
